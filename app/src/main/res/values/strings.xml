@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smart Pantry Manager</string>
+    <string-array name="ingredient_units">
+        <item>Pieces</item>
+        <item>Kg</item>
+        <item>Grams</item>
+        <item>Litres</item>
+        <item>Millilitres</item>
+        <item>Packets</item>
+        <item>Cans</item>
+        <item>Bottles</item>
+    </string-array>
+</resources>

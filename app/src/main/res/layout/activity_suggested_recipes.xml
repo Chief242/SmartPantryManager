@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F7F2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggested Recipes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#234B35"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipes you can make using only the ingredients in your pantry."
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtNoRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recipes match your pantry yet. \nAdd more ingredients to discover recipes."
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#DDDDDD"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>

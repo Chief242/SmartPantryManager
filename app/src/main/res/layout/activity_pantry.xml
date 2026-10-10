@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical"
+    android:background = "#F5F7F2"
+    android:padding = "20dp">
+
+    <!-- Screen Heading -->
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "My Pantry"
+        android:textSize = "28sp"
+        android:textStyle = "bold"
+        android:textColor = "#234B35"
+        android:layout_marginBottom = "8dp" />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Manage the ingredients you have at home."
+        android:textSize = "16sp"
+        android:textColor = "#555555"
+        android:layout_marginBottom = "24dp" />
+
+    <!-- Add Ingredient Button -->
+    <Button
+        android:id = "@+id/btnAddIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "+ Add Ingredient"
+        android:layout_marginBottom = "24dp" />
+
+    <!-- Ingredient List Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "My Ingredients"
+        android:textSize = "20sp"
+        android:textStyle = "bold"
+        android:textColor = "#234B35"
+        android:layout_marginBottom = "12dp" />
+
+    <!-- Empty Pantry Message -->
+    <TextView
+        android:id = "@+id/txtEmptyPantry"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Your pantry is empty.\nAdd ingredients to get started."
+        android:textSize = "16sp"
+        android:textColor = "#777777"
+        android:gravity = "center"
+        android:padding = "24dp" />
+
+    <!-- Ingredient List -->
+    <ListView
+        android:id = "@+id/listPantry"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1"
+        android:divider = "#DDDDDD"
+        android:dividerHeight = "1dp"
+        android:visibility = "gone" />
+
+    </LinearLayout>
