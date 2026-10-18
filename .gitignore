@@ -16,3 +16,7 @@ local.properties
 .externalNativeBuild
 .cxx
 
+# Generated Android Packages
+*.apk
+*.aab
+
