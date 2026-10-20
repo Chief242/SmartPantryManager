@@ -4,32 +4,38 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7F2">
+    android:background="#F5F7F2"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="24dp">
 
+        <!-- Recipe title -->
         <TextView
             android:id="@+id/txtRecipeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recipe Name"
-            android:textSize="26sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#234B35"
-            android:layout_marginBottom="24dp" />
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="28dp"
+            android:includeFontPadding="true" />
 
+        <!-- Ingredient section -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingredients"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:textStyle="bold"
             android:textColor="#234B35"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:id="@+id/txtRecipeIngredients"
@@ -38,16 +44,20 @@
             android:text="Ingredients"
             android:textSize="16sp"
             android:textColor="#444444"
-            android:layout_marginBottom="24dp" />
+            android:lineSpacingExtra="5dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="28dp" />
 
+        <!-- Preparation section -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preparation"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:textStyle="bold"
             android:textColor="#234B35"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:id="@+id/txtRecipeInstructions"
@@ -56,7 +66,9 @@
             android:text="Preparation instructions"
             android:textSize="16sp"
             android:textColor="#444444"
-            android:lineSpacingExtra="5dp" />
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:background="#FFFFFF" />
 
     </LinearLayout>
 
