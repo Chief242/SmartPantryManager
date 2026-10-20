@@ -5,9 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="14dp"
     android:background="#FFFFFF">
 
+    <!-- Recipe Name -->
     <TextView
         android:id="@+id/txtRecipeName"
         android:layout_width="match_parent"
@@ -16,22 +20,30 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#234B35"
+        android:lineSpacingExtra="2dp"
         android:layout_marginBottom="6dp" />
 
+    <!-- Number of Required Ingredients -->
     <TextView
         android:id="@+id/txtRecipeIngredientCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3 required ingredients"
         android:textSize="14sp"
-        android:textColor="#555555"
-        android:layout_marginBottom="12dp" />
+        android:textColor="#626B63"
+        android:layout_marginBottom="14dp" />
 
+    <!-- View Recipe Button -->
     <Button
         android:id="@+id/btnViewRecipe"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:text="View Recipe"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6B50A5"
+        android:stateListAnimator="@null"/>
 
 </LinearLayout>

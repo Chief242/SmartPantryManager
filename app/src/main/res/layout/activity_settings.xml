@@ -1,60 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#F5F7F2">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="#234B35"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Manage your Smart Pantry Manager preferences."
-        android:textSize="15sp"
-        android:textColor="#555555"
-        android:layout_marginBottom="24dp" />
+    android:background="#F5F7F2"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:padding="12dp"
-        android:background="#FFFFFF">
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="24dp">
+
+        <!-- Screen heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#234B35"
+            android:layout_marginBottom="8dp" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Expiring-soon alerts"
-            android:textSize="16sp"
-            android:textColor="#333333" />
+            android:text="Manage your Smart Pantry Manager preferences."
+            android:textSize="15sp"
+            android:textColor="#626B63"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="28dp" />
 
-        <Switch
-            android:id="@+id/switchAlerts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <!-- Preferences section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREFERENCES"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#6B50A5"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Alerts preference card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_recipe_detail_card"
+            android:layout_marginBottom="28dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expiring-soon alerts"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#234B35"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable or disable this preference."
+                    android:textSize="13sp"
+                    android:textColor="#626B63" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchAlerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Enable or disable expiring-soon alerts"
+                android:buttonTint="#6B50A5" />
+
+        </LinearLayout>
+
+        <!-- About section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#6B50A5"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Application information card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_recipe_detail_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smart Pantry Manager"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#234B35"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Database"
+                android:textSize="13sp"
+                android:textColor="#737B74" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQLite"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E9E0"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version"
+                android:textSize="13sp"
+                android:textColor="#737B74" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.0"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Database: SQLite\nApplication: Smart Pantry Manager\nVersion: 1.0"
-        android:textSize="15sp"
-        android:textColor="#555555"
-        android:layout_marginTop="24dp" />
-
-</LinearLayout>
-
+</ScrollView>
