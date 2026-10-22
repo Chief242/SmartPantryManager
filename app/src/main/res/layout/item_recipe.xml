@@ -5,13 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="14dp"
-    android:background="#FFFFFF">
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_recipe_detail_card"
+    android:clipToPadding="false">
 
-    <!-- Recipe Name -->
     <TextView
         android:id="@+id/txtRecipeName"
         android:layout_width="match_parent"
@@ -20,30 +18,32 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#234B35"
-        android:lineSpacingExtra="2dp"
+        android:letterSpacing="0.01"
         android:layout_marginBottom="6dp" />
 
-    <!-- Number of Required Ingredients -->
     <TextView
         android:id="@+id/txtRecipeIngredientCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3 required ingredients"
+        android:text="2 required ingredients"
         android:textSize="14sp"
         android:textColor="#626B63"
-        android:layout_marginBottom="14dp" />
+        android:layout_marginBottom="16dp" />
 
-    <!-- View Recipe Button -->
     <Button
         android:id="@+id/btnViewRecipe"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="46dp"
         android:text="View Recipe"
         android:textAllCaps="false"
         android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#6B50A5"
-        android:stateListAnimator="@null"/>
+        android:background="@drawable/bg_button_primary"
+        android:stateListAnimator="@null"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
 
 </LinearLayout>

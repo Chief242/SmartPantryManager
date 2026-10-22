@@ -1,6 +1,7 @@
 package com.example.smartpantrymanager;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class RecipeMatcher {
     //------------------------------------------
@@ -135,7 +136,7 @@ public class RecipeMatcher {
         String value =
                 name
                         .trim()
-                        .toLowerCase()
+                        .toLowerCase(Locale.ROOT)
                         .replaceAll(
                                 "[^a-z0-9]",
                                 ""
@@ -268,7 +269,7 @@ public class RecipeMatcher {
         }
 
         String value =
-                unit.trim().toLowerCase();
+                unit.trim().toLowerCase(Locale.ROOT);
 
         switch (value) {
 

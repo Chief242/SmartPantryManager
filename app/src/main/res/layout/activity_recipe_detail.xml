@@ -14,8 +14,8 @@
         android:orientation="vertical"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="28dp">
+        android:paddingTop="60dp"
+        android:paddingBottom="32dp">
 
         <!-- Recipe title -->
         <TextView
@@ -28,14 +28,24 @@
             android:textColor="#234B35"
             android:lineSpacingExtra="3dp"
             android:includeFontPadding="true"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="10dp" />
+
+        <!-- Introductory Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Everything you need to prepare this meal."
+            android:textSize="14sp"
+            android:textColor="#626B63"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="28dp" />
 
         <!-- Ingredients heading -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingredients"
-            android:textSize="21sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#234B35"
             android:layout_marginBottom="10dp" />
@@ -46,19 +56,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingredients"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#414A43"
-            android:lineSpacingExtra="6dp"
+            android:lineSpacingExtra="7dp"
             android:padding="18dp"
             android:background="@drawable/bg_recipe_detail_card"
-            android:layout_marginBottom="26dp" />
+            android:layout_marginBottom="28dp" />
 
         <!-- Preparation heading -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preparation"
-            android:textSize="21sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#234B35"
             android:layout_marginBottom="10dp" />
@@ -69,11 +79,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Preparation instructions"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textColor="#414A43"
             android:lineSpacingExtra="7dp"
             android:padding="18dp"
-            android:background="@drawable/bg_recipe_detail_card" />
+            android:background="@drawable/bg_recipe_detail_card"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy preparing your meal!"
+            android:textSize="13sp"
+            android:textColor="#626B63"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
 
     </LinearLayout>
 
