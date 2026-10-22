@@ -105,9 +105,32 @@ The following application behaviors have been tested:
 
 Additional regression testing and final verification will be performed before submission.
 
-### **Screenshots**
+## Screenshots
 
-Screenshots of the application's Home, My Pantry, Suggested Recipes, Recipe Details, and Settings screens will be added here after the final user-interface improvements.
+### Home Screen
+The home screen provides access to pantry management, recipe suggestions, and settings.
+
+![Smart Pantry Manager Home Screen](screenshots/home.png)
+
+### My Pantry
+View, add, edit, and delete pantry ingredients.
+
+![My Pantry Screen](screenshots/pantry.png)
+
+### Suggested Recipes
+Discover recipes that match the ingredients and quantities available in the pantry.
+
+![Suggested Recipes Screen](screenshots/suggested-recipes.png)
+
+### Recipe Details
+View the required ingredients, quantities, measurement units, and preparation instructions.
+
+![Recipe Details Screen](screenshots/recipe-details.png)
+
+### Settings
+Manage the saved expiring-soon alert preference and view application information.
+
+![Settings Screen](screenshots/settings.png)
 
 ### **Future Improvements**
 
